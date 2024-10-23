@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Knowledge Base</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/ford-motor-company8065.logowik.com.webp" alt="Ford Logo">
+        </div>
+        <h1>Process Knowledge Base</h1>
+    </header>
+
+    <main>
+        <h2 class="subtitle">Business Processes</h2>
+        <div class="process-icons">
+            <a href="/listar?processo=contas-a-pagar" class="process-link">
+                <div class="process-icon card">
+                    <img src="/img/contas-a-pagar-icon.png" alt="Accounts Payable">
+                    <p>Accounts Payable</p>
+                </div>
+            </a>
+            <a href="/listar?processo=contas-a-receber" class="process-link">
+                <div class="process-icon card">
+                    <img src="/img/contas-a-receber-icon.png" alt="Accounts Receivable">
+                    <p>Accounts Receivable</p>
+                </div>
+            </a>
+            <a href="/listar?processo=processos-de-importacao" class="process-link">
+                <div class="process-icon card">
+                    <img src="/img/importacao-icon.png" alt="Import">
+                    <p>Import</p>
+                </div>
+            </a>
+            <a href="/listar?processo=processos-de-vendas" class="process-link">
+                <div class="process-icon card">
+                    <img src="/img/vendas-icon.png" alt="Sales">
+                    <p>Sales</p>
+                </div>
+            </a>
+            <!-- Novos processos -->
+            <a href="/listar?processo=Processo-de-Escrituração" class="process-link">
+                <div class="process-icon card">
+                    <img src="/img/bookkeeping.png" alt="Invoice Bookkeeping">
+                    <p>Invoice Bookkeeping</p>
+                </div>
+            </a>
+            <a href="/listar?processo=Processo-de-Compras" class="process-link">
+                <div class="process-icon card">
+                    <img src="/img/purchaser.png" alt="Purchasing">
+                    <p>Purchasing</p>
+                </div>
+            </a>
+        </div>
+    </main>
+</body>
+</html>

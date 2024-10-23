@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Arquivos Disponíveis</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/listar.css}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/ford-motor-company8065.logowik.com.webp" alt="Ford Logo">
+        </div>
+        <h1>Process Knowledge Base</h1>
+    </header>
+
+    <main>
+        <h2>Arquivos para o processo: <span th:text="${processo}"></span></h2>
+        <ul>
+            <li th:each="arquivo : ${arquivos}">
+                <a th:href="@{/ler(processo=${processo},arquivo=${arquivo})}" th:text="${arquivo}"></a>
+            </li>
+        </ul>
+        <a href="/" class="back-button">Voltar</a>
+    </main>
+</body>
+</html>
